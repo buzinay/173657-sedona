@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Отели в Седоне</title>
+  </head>
+  <body>
+    <div class="page-container">
+
+      <!-- Заголовок-->
+        <header class="main-header">
+          <nav class="main-navigation">
+            <ul class="main-navigation-list">
+              <li class="main-navigation-item">
+                <a href="#">Информация</a>
+              </li>
+              <li class="main-navigation-item">
+                <a href="#">Фото и видео</a>
+              </li>
+              <li class="main-navigation-item">
+                <a href="#">Карта штата</a>
+              </li>
+              <li class="main-navigation-item">
+                <a href="#">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-logo">
+            <a class="main-logo-link" href="index.html">
+              <img class="logo" src="" width="" height="" alt="Город Седона">
+            </a>
+          </div>
+        </header>
+
+        <!-- Блок формы поиска-->
+        <section class="choice">
+          <div class="choice-form-wrapper">
+            <form class="choice-form" action="https://echo.htmlacademy.ru" method="post" id="choice-form-id">
+              <div class="choice-checkbox-wrapper">
+                <h2 class="choice-form-header">
+                  Инфраструктура:
+                </h2>
+                <div class="choice-row">
+                  <input class="choice-checkbox" type="checkbox" name="pool" id="pool-id" checked>
+                  <label class="choice-label" for="pool-id">Бассейн</label>
+                </div>
+                <div class="choice-row">
+                  <input class="choice-checkbox" type="checkbox" name="parking" id="parking-id">
+                  <label class="choice-label" for="parking-id">Паркинг</label>
+                </div>
+                <div class="choice-row">
+                  <input class="choice-checkbox" type="checkbox" name="wifi" id="wifi-id">
+                  <label class="choice-label" for="wifi-id">WI-FI</label>
+                </div>
+              </div>
+              <div class="choice-checkbox-wrapper">
+                <h2 class="choice-form-header">
+                  Тип жилья:
+                </h2>
+                <div class="choice-row">
+                  <input class="choice-checkbox" type="checkbox" name="hotel" id="hotel-id" checked>
+                  <label class="choice-label" for="hotel-id">Гостиница</label>
+                </div>
+                <div class="choice-row">
+                  <input class="choice-checkbox" type="checkbox" name="motel" id="motel-id" checked>
+                  <label class="choice-label" for="motel-id">Мотель</label>
+                </div>
+                <div class="choice-row">
+                  <input class="choice-checkbox" type="checkbox" name="apartments" id="apartments-id" checked>
+                  <label class="choice-label" for="apartments-id">Апартаменты</label>
+                </div>
+              </div>
+              <div class="choice-checkbox-wrapper">
+                <h2 class="choice-form-header">
+                  Стоимость в сутки(р)
+                </h2>
+                <div class="choice-cost">
+                  <div class="choice-cost-input">
+                    <div class="cost-input-wrapper">
+                      <label class="choice-label" for="cost-min-id">От</label>
+                      <input class="cost-input" type="text" name="cost-min" id="cost-min-id" value="" placeholder="0">
+                    </div>
+                    <div class="cost-input-wrapper">
+                      <label class="choice-label" for="cost-max-id">До</label>
+                      <input class="cost-input" type="text" name="cost-max" id="cost-max-id" value="" placeholder="3000">
+                    </div>
+                  </div>
+                  <div class="cost-input-scale">
+                    <div class="toggle-min"></div>
+                    <div class="toggle-max"></div>
+                    <div class="line-checked"></div>
+                    <div class="line-uncheked"></div>
+                  </div>
+                </div>
+                <button class="choice-button" type="submit">Показать</button>
+              </div>
+            </form>
+          </div>
+        </section>
+    </div>
+  </body>
