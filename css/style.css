@@ -1,0 +1,22 @@
+body {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.5;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+}
+
+h1 .about-header {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+}
+
+h2 .feature-header {
+  font-size: 21px;
+  font-weight: bold;
+  line-height:21px;
+  color: rgb(0, 0, 0);
+}
