@@ -3,20 +3,20 @@ body {
   font-style: normal;
   line-height: 1.5;
   font-family: "PT Sans", "Arial", sans-serif;
-  color: rgb(51, 51, 51);
+  color: #333333;
   text-transform: uppercase;
 }
 
-h1 .about-header {
+.about-header {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
-h2 .feature-header {
+.feature-header {
   font-size: 21px;
   font-weight: bold;
   line-height:21px;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
