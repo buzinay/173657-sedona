@@ -1,4 +1,7 @@
 body {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
   font-size: 14px;
   font-style: normal;
   line-height: 1.5;
@@ -7,16 +10,165 @@ body {
   text-transform: uppercase;
 }
 
+.main-navigation{
+padding-top: 17px;
+padding-bottom: 17px;
+}
+
+.main-navigation-list{
+  display: flex;
+  padding: 0;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin: 0;
+  list-style: none;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.main-navigation-item{
+  width: 20%;
+}
+
+.about{
+  margin: 0 auto;
+  text-align: center;
+}
+
 .about-header {
+  margin: 0;
+  padding: 0 300px;
+  padding-top: 56px;
+  padding-bottom: 16px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
   color: #000000;
 }
 
-.feature-header {
+.about-text{
+  margin: 0;
+  padding: 0 300px;
+  padding-top: 16px;
+  padding-bottom: 56px;
+}
+
+.features{
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature{
+  width: 33%;
+  text-align: center;
+  padding-top: 46px;
+  padding-bottom: 64px;
+}
+
+.feature-image{
+  width: 66%;
+  height: 256px;
+}
+
+.feature-image{
+  background-image: url("../img/sedona-feature1.jpg");
+}
+
+.feature-header,
+.offer-header{
   font-size: 21px;
   font-weight: bold;
   line-height:21px;
   color: #000000;
+}
+
+.feature-description{
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.offers{
+  display: flex;
+}
+
+.offer{
+  width: 33%;
+  min-height: 330px;
+  text-align: center;
+}
+
+.offer-description{
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.search{
+  margin: 0 auto;
+  width: 576px;
+}
+
+.search-button{
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 31px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.search-form-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.map-container{
+  margin: 0;
+  background-image: url("../img/map.jpg");
+  width: 1200px;
+  height: 593px;
+}
+
+.page-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  }
+
+.hashtag{
+  width: 33%;
+}
+
+.socials{
+  display: flex;
+  list-style: none;
+  width: 33%;
+  margin: 0;
+  padding: 0;
+}
+
+.website-creator{
+  width: 33%;
+}
+
+.white{
+  color: #ffffff;
+}
+
+.grey{
+  background-color: #eeeeee;
+}
+
+.blue{
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.center{
+  text-align: center;
 }
