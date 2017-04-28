@@ -1,6 +1,5 @@
 body {
-  width: 1200px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-size: 14px;
   font-style: normal;
@@ -8,6 +7,18 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
   text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+
+.page-container{
+  width:1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.main-header{
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 .main-navigation{
@@ -18,11 +29,9 @@ padding-bottom: 17px;
 .main-navigation-list{
   display: flex;
   padding: 0;
-  padding-left: 6%;
-  padding-right: 6%;
   margin: 0;
   list-style: none;
-  justify-content: space-between;
+  justify-content: flex-start;
   font-weight: bold;
 }
 
@@ -30,85 +39,140 @@ padding-bottom: 17px;
   width: 20%;
 }
 
+.main-navigation-item:nth-child(3){
+  margin-left: 20%;
+}
+
+.main-navigation-item:nth-child(3),
+.main-navigation-item:nth-child(4){
+  text-align: right;
+}
+
+.main-logo{
+  display: block;
+}
+
+.main-logo-link{
+  display: block;
+  width: 138px;
+  height: 70px;
+}
+
 .about{
-  margin: 0 auto;
-  text-align: center;
+  padding-top: 51px;
+  padding-bottom: 56px;
 }
 
 .about-header {
-  margin: 0;
-  padding: 0 300px;
-  padding-top: 56px;
-  padding-bottom: 16px;
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 36px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
   color: #000000;
+  text-align: center;
 }
 
 .about-text{
   margin: 0;
-  padding: 0 300px;
-  padding-top: 16px;
-  padding-bottom: 56px;
+  text-align: center;
 }
 
 .features{
   display: flex;
-  justify-content: space-between;
 }
 
 .feature{
-  width: 33%;
+  width: 400px;
   text-align: center;
   padding-top: 46px;
-  padding-bottom: 64px;
+  padding-bottom: 62px;
 }
 
 .feature-image{
-  width: 66%;
+  width: 800px;
   height: 256px;
 }
 
 .feature-image{
   background-image: url("../img/sedona-feature1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.
+.image2{
+  background-image: url("../img/sedona-feature2.jpg");
+  order: -1;
 }
 
 .feature-header,
 .offer-header{
+  width: 160px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   font-size: 21px;
   font-weight: bold;
   line-height:21px;
   color: #000000;
 }
 
-.feature-description{
-  margin-left: 48px;
-  margin-right: 48px;
+.feature-number{
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.feature-description,
+.offer-description{
+  width:290px;
+  margin: 0 auto;
+}
+
+.description-width1{
+    width:220px;
+}
+
+.description-width2{
+    width:310px;
 }
 
 .offers{
   display: flex;
+  padding-top: 158px;
+  padding-bottom: 89px;
 }
 
 .offer{
-  width: 33%;
-  min-height: 330px;
+  width: 400px;
   text-align: center;
 }
 
-.offer-description{
-  margin-left: 48px;
-  margin-right: 48px;
+.search{
+  margin: 0;
+  padding-top: 60px;
 }
 
-.search{
+.search-header{
+  width: 300px;
   margin: 0 auto;
-  width: 576px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.search-description{
+  width: 440px;
+  margin: 0 auto;
+  margin-bottom: 54px;
+  text-align: center;
 }
 
 .search-button{
-  width: 100%;
+  width: 576px;
+  display: block;
+  border: 0;
+  margin: 0 auto;
   padding-top: 26px;
   padding-bottom: 31px;
   font-size: 21px;
@@ -117,17 +181,50 @@ padding-bottom: 17px;
   text-transform: uppercase;
 }
 
+.search-form-wrapper{
+  width: 576px;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 55px;
+}
+
 .search-form-row{
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin-top: 14px;
-  margin-bottom: 14px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.search-label{
+  margin-right: 20px;
+}
+
+.search-input-wrapper{
+  width: 348px;
+  align-self: flex-end;
+}
+
+.search-input-wrapper1{
+  width: 117px;
+}
+
+.search-input{
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 100%;
+  display: block;
+  border: 0;
+  background-color: #f2f2f2;
 }
 
 .map-container{
   margin: 0;
   background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   width: 1200px;
   height: 593px;
 }
@@ -141,19 +238,28 @@ padding-bottom: 17px;
   }
 
 .hashtag{
-  width: 33%;
+  width: 400px;
 }
 
 .socials{
   display: flex;
   list-style: none;
-  width: 33%;
+  width: 400px;
   margin: 0;
   padding: 0;
 }
 
 .website-creator{
-  width: 33%;
+  width: 400px;
+}
+
+.website-creator-link{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.blue{
+  background-color: #81b3d2;
 }
 
 .white{
@@ -164,8 +270,7 @@ padding-bottom: 17px;
   background-color: #eeeeee;
 }
 
-.blue{
-  background-color: #81b3d2;
+.white{
   color: #ffffff;
 }
 
