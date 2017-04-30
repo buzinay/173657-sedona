@@ -100,7 +100,7 @@ padding-bottom: 17px;
   background-repeat: no-repeat;
   background-position: center;
 }
-.
+
 .image2{
   background-image: url("../img/sedona-feature2.jpg");
   order: -1;
@@ -129,11 +129,11 @@ padding-bottom: 17px;
 }
 
 .description-width1{
-    width:220px;
+  width:220px;
 }
 
 .description-width2{
-    width:310px;
+  width:310px;
 }
 
 .offers{
@@ -153,12 +153,11 @@ padding-bottom: 17px;
 }
 
 .search-header{
-  width: 300px;
-  margin: 0 auto;
   margin-bottom: 40px;
   font-size: 30px;
   font-weight: bold;
   line-height: 24px;
+  text-align: center;
 }
 
 .search-description{
@@ -173,12 +172,14 @@ padding-bottom: 17px;
   display: block;
   border: 0;
   margin: 0 auto;
-  padding-top: 26px;
-  padding-bottom: 31px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #ffffff;
+  background-color: #766357;
 }
 
 .search-form-wrapper{
@@ -206,7 +207,8 @@ padding-bottom: 17px;
 }
 
 .search-input-wrapper1{
-  width: 117px;
+  display: flex;
+  width: 115px;
 }
 
 .search-input{
@@ -218,6 +220,31 @@ padding-bottom: 17px;
   display: block;
   border: 0;
   background-color: #f2f2f2;
+}
+
+.input-width{
+  width: 41px;
+}
+
+.button-scale{
+  display: block;
+  border: 0;
+  width: 37px;
+}
+
+.search-form-button{
+  width: 460px;
+  display: block;
+  border: 0;
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 
 .map-container{
