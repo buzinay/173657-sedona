@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Отели в Седоне</title>
   </head>
@@ -13,24 +14,22 @@
         <nav class="main-navigation">
           <ul class="main-navigation-list">
             <li class="main-navigation-item">
-              <a href="#">Информация</a>
+              <a class="main-navigation-link" href="#">Информация</a>
             </li>
             <li class="main-navigation-item">
-              <a href="#">Фото и видео</a>
+              <a  class="main-navigation-link" href="#">Фото и видео</a>
             </li>
             <li class="main-navigation-item">
-              <a href="#">Карта штата</a>
+              <a class="main-navigation-link" href="#">Карта штата</a>
             </li>
             <li class="main-navigation-item">
-              <a href="#">Гостиницы</a>
+              <a class="main-navigation-link" href="#">Гостиницы</a>
             </li>
           </ul>
         </nav>
-        <div class="main-logo">
-          <a class="main-logo-link" href="index.html">
-            <img class="logo" src="" width="" height="" alt="Город Седона">
-          </a>
-        </div>
+        <a class="main-logo-link" href="index.html">
+          <img class="logo" src="img/sedona-logo.png" width="138" height="70" alt="Город Седона">
+        </a>
       </header>
 
         <!-- Блок формы поиска-->
@@ -40,7 +39,7 @@
             <div class="choice-checkbox-wrapper">
               <h2 class="choice-form-header">
                 Инфраструктура:
-              </h2>
+                </h2>
               <div class="choice-row">
                 <input class="choice-checkbox" type="checkbox" name="pool" id="pool-id" checked>
                 <label class="choice-label" for="pool-id">Бассейн</label>
@@ -81,8 +80,7 @@
                     <label class="choice-label" for="cost-min-id">От</label>
                     <input class="cost-input" type="text" name="cost-min" id="cost-min-id" value="" placeholder="0">
                   </div>
-                  <div class="cost-input-wrapper">
-                    <label class="choice-label" for="cost-max-id">До</label>
+                  <div class="cost-input-wrapper">                      <label class="choice-label" for="cost-max-id">До</label>
                     <input class="cost-input" type="text" name="cost-max" id="cost-max-id" value="" placeholder="3000">
                   </div>
                 </div>
@@ -98,129 +96,132 @@
           </form>
         </div>
       </section>
+      <main class="main-hotels-container">
 
-      <!--Блок сотировки-->
-      <section class="sort">
-        <h2 class="sort-header">
-          Найдено: 3
-        </h2>
-        <div class="sort-list-wrapper">
-          <p class="sort-list-title">
-            Сортировка:
-          </p>
-          <ul class="sort-list">
-            <li class="sort-list-item">
-              <a class="sort-link" href="#">По цене</a>
-            </li>
-            <li class="sort-list-item">
-              <a class="sort-link" href="#">По типу</a>
-            </li>
-            <li class="sort-list-item">
-              <a class="sort-link" href="#">По рейтингу</a>
-            </li>
-          </ul>
-        </div>
-        <div class="sort-change">
-          <ul class="sort-change-list">
-            <li>
-              <a class="change-link" href="#"></a>
-            </li>
-            <li>
-              <a class="change-link" href="#"></a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        <!--Блок сотировки-->
+        <section class="sort">
+          <h2 class="sort-header">
+            Найдено: 3
+          </h2>
+          <div class="sort-list-wrapper">
+            <p class="sort-list-title">
+              Сортировка:
+            </p>
+            <ul class="sort-list">
+              <li class="sort-list-item">
+                <a class="sort-link" href="#">По цене</a>
+              </li>
+              <li class="sort-list-item">
+                <a class="sort-link" href="#">По типу</a>
+              </li>
+              <li class="sort-list-item">
+                <a class="sort-link" href="#">По рейтингу</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sort-change">
+            <ul class="sort-change-list">
+              <li>
+                <a class="change-link" href="#"></a>
+              </li>
+              <li>
+                <a class="change-link" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-      <!--Блок карточки отелей-->
-      <section class="cards">
-        <div class="card">
-          <div class="card-foto">
-            <img class="card-img" src="img/amara resort-foto.jpg" width="135" height="90" alt="Amara resort &#38; spa">
-          </div>
-          <div class="card-content">
-            <h2 class="card-header">
-              <a class="card-header-link" href="#">Amara resort &#38; spa</a>
-            </h2>
-            <div class="card-part-wrapper">
-              <p class="card-text">Гостиница</p>
-              <a class="card-part-link" href="#">Подробнее</a>
+        <!--Блок карточки отелей-->
+        <section class="cards">
+          <div class="card">
+            <div class="card-foto">
+              <img class="card-img" src="img/amara resort-foto.jpg" width="135" height="90" alt="Amara resort &#38; spa">
             </div>
-            <div class="card-part-wrapper">
-              <p class="card-text">от 4000р.</p>
-              <a class="card-part-link" href="#">Забронировать</a>
+            <div class="card-content">
+              <h2 class="card-header">
+                <a class="card-header-link" href="#">Amara resort &#38; spa</a>
+              </h2>
+              <div class="card-part-wrapper">
+                <p class="card-text">Гостиница</p>
+                <a class="card-part-link blue" href="#">Подробнее</a>
+              </div>
+              <div class="card-part-wrapper">
+                <p class="card-text">от 4000р.</p>
+                <a class="card-part-link brawn" href="#">Забронировать</a>
+              </div>
             </div>
-          </div>
-          <div class="card-rating">
-            <div class="card-rating-stars"></div>
-            <p class="card-text">Рейтинг:8,5</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-foto">
-            <img class="card-img" src="img/desert quail inn-foto.jpg" width="135" height="90" alt="Desert quail inn">
-          </div>
-          <div class="card-content">
-            <h2 class="card-header">
-              <a class="card-header-link" href="#">Desert quail inn</a>
-            </h2>
-            <div class="card-part-wrapper">
-              <p class="card-text">Мотель</p>
-              <a class="card-part-link" href="#">Подробнее</a>
-            </div>
-            <div class="card-part-wrapper">
-              <p class="card-text">от 3000р.</p>
-              <a class="card-part-link" href="#">Забронировать</a>
+            <div class="card-rating">
+              <div class="card-rating-stars"></div>
+              <p class="card-text">Рейтинг:8,5</p>
             </div>
           </div>
-          <div class="card-rating">
-            <div class="card-rating-stars"></div>
-            <p class="card-text">Рейтинг:8,9</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-foto">
-            <img class="card-img" src="img/villas at poco diabolo-foto.jpg" width="135" height="90" alt="Villas at Poco diabolo">
-          </div>
-          <div class="card-content">
-            <h2 class="card-header">
-              <a class="card-header-link" href="#">Villas at Poco diabolo</a>
-            </h2>
-            <div class="card-part-wrapper">
-              <p class="card-text">Апартаменты</p>
-              <a class="card-part-link" href="#">Подробнее</a>
+          <div class="card">
+            <div class="card-foto">
+              <img class="card-img" src="img/desert quail inn-foto.jpg" width="135" height="90" alt="Desert quail inn">
             </div>
-            <div class="card-part-wrapper">
-              <p class="card-text">от 2000р.</p>
-              <a class="card-part-link" href="#">Забронировать</a>
+            <div class="card-content">
+              <h2 class="card-header">
+                <a class="card-header-link" href="#">Desert quail inn</a>
+              </h2>
+              <div class="card-part-wrapper">
+                <p class="card-text">Мотель</p>
+                <a class="card-part-link blue" href="#">Подробнее</a>
+              </div>
+              <div class="card-part-wrapper">
+                <p class="card-text">от 3000р.</p>
+                <a class="card-part-link brawn" href="#">Забронировать</a>
+              </div>
+            </div>
+            <div class="card-rating">
+              <div class="card-rating-stars"></div>
+              <p class="card-text">Рейтинг:8,9</p>
             </div>
           </div>
-          <div class="card-rating">
-            <div class="card-rating-stars"></div>
-            <p class="card-text">Рейтинг:9,2</p>
+          <div class="card">
+            <div class="card-foto">
+              <img class="card-img" src="img/villas at poco diabolo-foto.jpg" width="135" height="90" alt="Villas at Poco diabolo">
+            </div>
+            <div class="card-content">
+              <h2 class="card-header">
+                <a class="card-header-link" href="#">Villas at Poco diabolo</a>
+              </h2>
+              <div class="card-part-wrapper">
+                <p class="card-text">Апартаменты</p>
+                <a class="card-part-link blue" href="#">Подробнее</a>
+              </div>
+              <div class="card-part-wrapper">
+                <p class="card-text">от 2000р.</p>
+                <a class="card-part-link brawn" href="#">Забронировать</a>
+              </div>
+            </div>
+            <div class="card-rating">
+              <div class="card-rating-stars"></div>
+              <p class="card-text">Рейтинг:9,2</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       <!--Футер-->
       <footer class="page-footer">
-        <div class="hashtag">
-          #Visitsedona
+        <div class="hashtag center">
+         #Visitsedona
         </div>
         <ul class="socials">
           <li class="social-item">
-            <a class="social-tw" href="#" target="_blank" title="Мы в Твиттере"></a>
+            <a class="social-link tw" href="#" target="_blank" title="Мы в Твиттере">tw</a>
           </li>
           <li class="social-item">
-           <a class="social-link-fb" href="#" target="_blank" title="Мы в Фейсбуке"></a>
+           <a class="social-link fb" href="#" target="_blank" title="Мы в Фейсбуке">fb</a>
           </li>
-          <li class="social-item" >
-           <a class="social-link-post" href="#" target="_blank" title="Написать сообщение"></a>
+          <li class="social-item">
+           <a class="social-link post" href="#" target="_blank" title="Написать сообщение">mail</a>
           </li>
         </ul>
-        <div class="website-creator">
-          Website by
-          <a class="website-creator-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"></a>
+        <div class="website-creator center">Website by
+          <a class="website-creator-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+            <img src="img/academy-logo.png" width="113" height="39" alt="HTML Academy">
+          </a>
         </div>
       </footer>
     </div>

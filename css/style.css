@@ -19,6 +19,7 @@ body {
 .main-header{
   padding-left: 6%;
   padding-right: 6%;
+  position: relative;
 }
 
 .main-navigation{
@@ -36,11 +37,11 @@ padding-bottom: 17px;
 }
 
 .main-navigation-item{
-  width: 20%;
+  width: 240px;
 }
 
 .main-navigation-item:nth-child(3){
-  margin-left: 20%;
+  margin-left: 96px;
 }
 
 .main-navigation-item:nth-child(3),
@@ -48,14 +49,21 @@ padding-bottom: 17px;
   text-align: right;
 }
 
-.main-logo{
-  display: block;
+.main-navigation-link{
+  color: #000000;
+  text-decoration: none;
 }
 
 .main-logo-link{
   display: block;
   width: 138px;
   height: 70px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 528px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .about{
@@ -93,9 +101,6 @@ padding-bottom: 17px;
 .feature-image{
   width: 800px;
   height: 256px;
-}
-
-.feature-image{
   background-image: url("../img/sedona-feature1.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -128,12 +133,20 @@ padding-bottom: 17px;
   margin: 0 auto;
 }
 
+.header-width1{
+  width: 151px;
+}
+
 .description-width1{
   width:220px;
 }
 
 .description-width2{
-  width:310px;
+  width:270px;
+}
+
+.description-width3{
+  width: 310px;
 }
 
 .offers{
@@ -161,8 +174,6 @@ padding-bottom: 17px;
 }
 
 .search-description{
-  width: 440px;
-  margin: 0 auto;
   margin-bottom: 54px;
   text-align: center;
 }
@@ -270,10 +281,26 @@ padding-bottom: 17px;
 
 .socials{
   display: flex;
+  justify-content: center;
   list-style: none;
   width: 400px;
   margin: 0;
   padding: 0;
+}
+
+.social-item{
+  display: block;
+}
+
+.social-link{
+  display:inline-block;
+  width: 47px;
+  height: 47px;
+  margin: 0 3px;
+  background-color: #81b3d2;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
 }
 
 .website-creator{
@@ -297,10 +324,180 @@ padding-bottom: 17px;
   background-color: #eeeeee;
 }
 
-.white{
-  color: #ffffff;
+.brawn{
+  background-color: #766357;
 }
 
 .center{
   text-align: center;
+}
+
+/* Sedona-hotels*/
+
+.choice-form-wrapper{
+  width: 1200px;
+  height: 220px;
+  background-image: url("../img/filter-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.choice-form{
+  width: 1056px;
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.choice-checkbox-wrapper{
+  width:254px;
+}
+
+.choice-form-header{
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.choice-row{
+  margin-bottom: 24px;
+}
+
+.choice-checkbox-wrapper .choice-row:last-child{
+  margin-bottom: 0px;
+}
+
+.choice-label{
+  color: #ffffff;
+}
+
+.choice-form .choice-checkbox-wrapper:nth-child(2){
+  margin-right: 200px;
+}
+
+.choice-checkbox-wrapper:last-child{
+  width: 318px;
+}
+
+.sort{
+  display: flex;
+  align-items: baseline;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.sort-header{
+  margin: 0;
+  margin-right: 48px;
+  padding: 0;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.sort-list-wrapper{
+  display: flex;
+}
+
+.sort-list-title{
+  margin: 0;
+  margin-right: 38px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-list{
+  display: flex;
+  width:240px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-list-item{
+  display: inline-block;
+}
+
+.sort-change-list{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.change-link{
+  text-decoration: none;
+}
+
+.main-hotels-container{
+  margin: 0;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.cards{
+}
+
+.card{
+  display: flex;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.card-content{
+  width: 280px;
+  margin: 0;
+  margin-left: 30px;
+}
+
+.card-header{
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.card-header-link{
+  text-decoration: none;
+}
+
+.card-part-wrapper{
+  display: inline-block;
+  margin: 0;
+  margin-right: 4px;
+  font-size: 0;
+}
+
+.card .card-part-wrapper:last-child{
+  margin-right: 0;
+}
+
+.card-text{
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.card-part-link{
+  display: block;
+  padding: 3px 16px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
 }
