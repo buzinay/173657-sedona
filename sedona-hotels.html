@@ -14,7 +14,7 @@
         <nav class="main-navigation">
           <ul class="main-navigation-list">
             <li class="main-navigation-item">
-              <a class="main-navigation-link" href="#">Информация</a>
+              <a class="main-navigation-link" href="index.html">Информация</a>
             </li>
             <li class="main-navigation-item">
               <a  class="main-navigation-link" href="#">Фото и видео</a>
@@ -23,7 +23,7 @@
               <a class="main-navigation-link" href="#">Карта штата</a>
             </li>
             <li class="main-navigation-item">
-              <a class="main-navigation-link" href="#">Гостиницы</a>
+              <a class="main-navigation-link">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -70,31 +70,29 @@
                 <label class="choice-label" for="apartments-id">Апартаменты</label>
               </div>
             </div>
-            <div class="choice-checkbox-wrapper">
+            <div class="choice-cost-wrapper">
               <h2 class="choice-form-header">
                 Стоимость в сутки(р)
               </h2>
               <div class="choice-cost">
-                <div class="choice-cost-input">
-                  <div class="cost-input-wrapper">
-                    <label class="choice-label" for="cost-min-id">От</label>
-                    <input class="cost-input" type="text" name="cost-min" id="cost-min-id" value="" placeholder="0">
-                  </div>
-                  <div class="cost-input-wrapper">                      <label class="choice-label" for="cost-max-id">До</label>
-                    <input class="cost-input" type="text" name="cost-max" id="cost-max-id" value="" placeholder="3000">
-                  </div>
+                <label class="cost-label-min">От
+                  <input class="cost-input" type="text" name="cost-min" id="cost-min-id" value="" placeholder="0">
+                </label>
+                <label class="cost-label-max">До
+                  <input class="cost-input" type="text" name="cost-max" id="cost-max-id" value="" placeholder="3000">
+                </label>
+              </div>
+              <div class="cost-range">
+                <div class="range-line">
+                  <div class="bar"></div>
                 </div>
-                <div class="cost-input-scale">
-                  <div class="toggle-min"></div>
-                  <div class="toggle-max"></div>
-                  <div class="line-checked"></div>
-                  <div class="line-uncheked"></div>
-                </div>
+                <div class="range-toggle toggle-min"></div>
+                <div class="range-toggle toggle-max"></div>
               </div>
               <button class="choice-button" type="submit">Показать</button>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </section>
       <main class="main-hotels-container">
 
