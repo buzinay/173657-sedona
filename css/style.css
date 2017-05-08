@@ -527,14 +527,6 @@ padding-bottom: 18px;
   vertical-align: middle;
 }
 
-/*.blue {
-  background-color: #81b3d2;
-}
-
-.brown{
-  background-color: #766357;
-}*/
-
 .center{
   text-align: center;
 }
@@ -953,6 +945,14 @@ margin-right: 33px;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+}
+
+.blue {
+  background-color: #81b3d2;
+}
+
+.brown{
+  background-color: #766357;
 }
 
 .card-part-link.blue:hover {
