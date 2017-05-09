@@ -617,6 +617,10 @@ padding-bottom: 18px;
   background-position: -198px -198px;
 }
 
+.choice-checkbox:disabled+.choice-label{
+  color: #aeaeae;
+}
+
 .choice-checkbox:disabled+.choice-label::before {
   position: absolute;
   top: -3px;
@@ -639,18 +643,6 @@ padding-bottom: 18px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -189px -52px;
-}
-
-.choice-checkbox:checked+.choice-label.block::before {
-  position: absolute;
-  top: -3px;
-  left: 0;
-  content: "";
-  width: 26px;
-  height: 22px;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: -143px -52px;
 }
 
 .choice-cost-wrapper {
