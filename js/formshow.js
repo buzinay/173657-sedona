@@ -18,6 +18,9 @@ if (storagechildren) {
 
 link.addEventListener("click", function(event) {
 event.preventDefault();
+if (formwrap.classList.contains("search-form-error")){
+    formwrap.classList.remove("search-form-error");
+  }
 formwrap.classList.toggle("search-form-hidden");
 formwrap.classList.toggle("search-form-show");
 datein.focus();
@@ -26,7 +29,7 @@ datein.focus();
 form.addEventListener("submit", function(event) {
 
   if (formwrap.classList.contains("search-form-error")){
-  formwrap.classList.remove("search-form-error");
+    formwrap.classList.remove("search-form-error");
   }
 
   if (!datein.value || !dateout.value || !adults.value || !children.value) {
@@ -37,6 +40,7 @@ form.addEventListener("submit", function(event) {
     localStorage.setItem("adults", adults.value);
     localStorage.setItem("children", children.value);
   }
+
 });
 
   window.addEventListener("keydown", function(event) {

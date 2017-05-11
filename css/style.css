@@ -696,7 +696,7 @@ padding-bottom: 18px;
   background-position: -198px -198px;
 }
 
-.choice-checkbox:disabled>.choice-label{
+.choice-checkbox:disabled+.choice-label{
   color: #606569;
 }
 
