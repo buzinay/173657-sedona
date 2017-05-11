@@ -37,4 +37,4 @@ window.addEventListener("keydown", function(event) {
         formwrap.classList.remove("search-form-error");
       }
    }
- });
+  });
