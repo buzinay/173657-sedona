@@ -10,46 +10,50 @@ var storagechildren = localStorage.getItem("children");
 
 if (storageadults) {
       adults.value = storageadults;
-    }
+  }
 
 if (storagechildren) {
       children.value = storagechildren;
-    }
+  }
+
+if (formwrap.classList.contains("search-form-show")) {
+    formwrap.classList.toggle("search-form-hidden");
+    formwrap.classList.toggle("search-form-show");
+  }
 
 link.addEventListener("click", function(event) {
-event.preventDefault();
-if (formwrap.classList.contains("search-form-error")){
-    formwrap.classList.remove("search-form-error");
-  }
-formwrap.classList.toggle("search-form-hidden");
-formwrap.classList.toggle("search-form-show");
-datein.focus();
-});
+    event.preventDefault();
+    if (formwrap.classList.contains("search-form-error")) {
+        formwrap.classList.remove("search-form-error");
+      }
+    formwrap.classList.toggle("search-form-hidden");
+    formwrap.classList.toggle("search-form-show");
+    datein.focus();
+  });
 
 form.addEventListener("submit", function(event) {
+    if (formwrap.classList.contains("search-form-error")) {
+      formwrap.classList.remove("search-form-error");
+    }
 
-  if (formwrap.classList.contains("search-form-error")){
-    formwrap.classList.remove("search-form-error");
+    if (!datein.value || !dateout.value || !adults.value || !children.value) {
+      event.preventDefault();
+      formwrap.classList.add("search-form-error");
+    }
+    else {
+      localStorage.setItem("adults", adults.value);
+      localStorage.setItem("children", children.value);
   }
-
-  if (!datein.value || !dateout.value || !adults.value || !children.value) {
-    event.preventDefault();
-    formwrap.classList.add("search-form-error");
-  }
-  else {
-    localStorage.setItem("adults", adults.value);
-    localStorage.setItem("children", children.value);
-  }
-
 });
 
-  window.addEventListener("keydown", function(event) {
+window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
       if (formwrap.classList.contains("search-form-show")) {
         formwrap.classList.toggle("search-form-hidden");
+        formwrap.classList.toggle("search-form-show");
       }
       if (formwrap.classList.contains("search-form-error")){
-      formwrap.classList.remove("search-form-error");
+        formwrap.classList.remove("search-form-error");
       }
    }
  });
