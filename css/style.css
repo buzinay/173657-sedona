@@ -302,10 +302,6 @@ padding-bottom: 18px;
   }
 }
 
-.search-form-show {
-  display: block;
-}
-
 .search-form-hidden {
   display: none;
 }
@@ -417,9 +413,8 @@ padding-bottom: 18px;
   top: 50%;
   right: 0;
   display: block;
-  width: 21px;
+  width: 22px;
   height: 22px;
-  background-color: #f2f2f2;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -225px -10px;
